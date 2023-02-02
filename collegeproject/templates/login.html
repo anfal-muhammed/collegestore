@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form action="login" method="post">
+    {% csrf_token %}
+    <input type="text" name="username" placeholder="enter username"><br>
+    <input type="password" name="password" placeholder="enter password"><br>
+    <input type="submit">
+    <button class="btn btn-success" href="{% url 'collegeapp:register' %}">Register</button>
+</form>
+</body>
+</html>
